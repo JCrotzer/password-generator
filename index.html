@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Frontend Mentor | Password generator app</title>
+  </head>
+  <body>
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <main>
+      <div class="generator">
+        <div class="generator-result">
+          <p>P4$5W0rD!</p>
+          <div class="generator-copy">
+            <p class="generator__copied-text generator__copied-text--hidden">
+              Copied
+            </p>
+            <button class="generator__copy-btn">
+              <img
+                src="/assets/images/icon-copy.svg"
+                class="generator__copy-icon"
+                alt="Copy icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="generator-settings">
+          <form action="#" class="form-generator">
+            <div class="generator-slider">
+              <div class="generator-title">
+                <label for="slider" class="generator__length-text"
+                  >Character Length</label
+                >
+                <span class="generator__length-value">10</span>
+              </div>
+              <div class="generator__slider-main">
+                <input
+                  type="range"
+                  id="slider"
+                  name="length"
+                  class="generator__slider-input"
+                  min="1"
+                  max="20"
+                  value="10"
+                />
+              </div>
+            </div>
+            <div class="generator__options-section">
+              <label class="generator__checkbox-label">
+                <input
+                  name="uppercase"
+                  type="checkbox"
+                  class="generator__checkbox"
+                />
+                Include Uppercase Letters
+              </label>
+              <label class="generator__checkbox-label">
+                <input
+                  name="lowercase"
+                  data-option-type="uppercase"
+                  type="checkbox"
+                  class="generator__checkbox"
+                />
+                Include Lowercase Letters
+              </label>
+              <label class="generator__checkbox-label">
+                <input
+                  name="numbers"
+                  data-option-type="lowercase"
+                  type="checkbox"
+                  class="generator__checkbox"
+                />
+                Include Numbers
+              </label>
+              <label class="generator__checkbox-label">
+                <input
+                  name="symbols"
+                  type="checkbox"
+                  class="generator__checkbox"
+                />
+                Include Symbols
+              </label>
+            </div>
+            <div class="generator__strength-section">
+              <p class="generator__strength-title">Strength</p>
+              <div class="generator__strength-display">
+                <p class="generator__strength-text"></p>
+                <div class="generator__strength-bars-container">
+                  <div class="generator__strength-bar bar"></div>
+                  <div class="generator__strength-bar bar"></div>
+                  <div class="generator__strength-bar bar"></div>
+                  <div class="generator__strength-bar bar"></div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="generator__generate-btn">
+              Generate
+              <img
+                src="/assets/images/icon-arrow-right.svg"
+                class="generator__arrow-icon"
+                alt="Arrow icon"
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
