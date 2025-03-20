@@ -79,6 +79,10 @@ main {
   background: none;
   border: none;
   cursor: pointer;
+
+  &--disabled {
+    pointer-events: none;
+  }
 }
 
 .generator__copied-text--hidden {
