@@ -32,7 +32,7 @@ body {
 h1 {
   font-size: 16px;
   font-weight: bold;
-  margin: 50px 0 20px 0;
+  margin: 20px 0;
 }
 
 main {
@@ -61,7 +61,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 2em;
+  padding: 3em 2em;
 }
 
 .generator-result p {
