@@ -79,7 +79,7 @@ function updateStrengthIndicator(password) {
   if (password.match(/[^a-zA-Z0-9]/)) strength++;
 
   strengthText.textContent =
-    ["Too Weak", "Weak", "Medium", "Strong"][strength - 1] || "Too Weak";
+    ["Too Weak!", "Weak", "Medium", "Strong"][strength - 1] || "Too Weak";
   strengthBars.forEach((bar, index) => {
     bar.dataset.level = index < strength ? strength : "";
   });

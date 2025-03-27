@@ -81,9 +81,14 @@ main {
   border: none;
   cursor: pointer;
 
-  &--disabled {
+  .generator__copy-btn::disabled {
     pointer-events: none;
   }
+}
+
+.generator-copy p {
+  font-size: 18px;
+  color: var(--neon-green);
 }
 
 .generator__copied-text--hidden {
@@ -203,10 +208,10 @@ main {
 .generator__checkbox:checked {
   border: none;
   background-color: var(--neon-green);
+}
 
-  &::before {
-    display: block;
-  }
+.generator__checkbox::before {
+  display: block;
 }
 
 .generator__checkbox:hover {
@@ -239,7 +244,7 @@ main {
 .generator__strength-text {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--white);
 }
 
